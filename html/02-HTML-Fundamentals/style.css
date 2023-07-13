@@ -28,7 +28,7 @@
     padding-left: 40px;
     padding-right: 40px; */
     padding: 20px 40px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     /* height: 80px; */
   }
   
@@ -37,9 +37,9 @@
     /* text-align: center; */
   }
   
-  article {
+  /* article {
     margin-bottom: 60px;
-  }
+  } */
   
   .post-header {
     margin-bottom: 40px;
@@ -269,20 +269,20 @@
     font-size: 18px;
   } */
 
-h1{
+/* h1{
     float: left;
 }
 
 nav{
     float: right;
-}
+} */
 
 /* .clear{
     clear: both;
 } */
 
 /* Clear floats in float laypout otherwise collapsible element */
-.clearfix::after {
+/* .clearfix::after {
     clear: both;
     content: '';
     display: block;
@@ -298,6 +298,31 @@ aside{
 }
 
 footer{
-    /* background-color: yellow; */
+    background-color: yellow;
     clear:  both;
+} */
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    column-gap: 75px ;
+    align-items: start;
+}
+
+.main-header{
+    grid-column: 1/-1;
+}
+
+article{
+
+}
+
+/* aside{
+
+    align-self:start;
+} */
+
+footer{
+    grid-column: 1/-1;
 }
